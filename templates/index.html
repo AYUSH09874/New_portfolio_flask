@@ -1,1 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayush Kumar | Cybersecurity Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- CSS -->
+<link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
 
+<!-- JavaScript -->
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+
+<!-- Images -->
+<!-- <img src="{{ url_for('static', filename='image.jpg') }}" alt="Profile">
+<img src="{{ url_for('static', filename='Anomoly.png') }}">
+<img src="{{ url_for('static', filename='Railways.jpg') }}">
+<img src="{{ url_for('static', filename='parking.jpg') }}"> -->
+</head>
+<body class="light-mode">
+    <!-- Theme Toggle -->
+    <div class="theme-toggle">
+        <input type="checkbox" id="theme-switch" class="theme-switch">
+        <label for="theme-switch" class="theme-label">
+            <i class="fas fa-sun"></i>
+            <i class="fas fa-moon"></i>
+            <div class="theme-ball"></div>
+        </label>
+    </div>
+
+    <!-- Background Elements -->
+    <div class="background-elements">
+        <div class="bg-circle bg-circle-1"></div>
+        <div class="bg-circle bg-circle-2"></div>
+        <div class="bg-circle bg-circle-3"></div>
+        <div class="cyber-icon icon-1"><i class="fas fa-shield-alt"></i></div>
+        <div class="cyber-icon icon-2"><i class="fas fa-code"></i></div>
+        <div class="cyber-icon icon-3"><i class="fas fa-lock"></i></div>
+        <div class="cyber-icon icon-4"><i class="fas fa-terminal"></i></div>
+        <div class="cyber-icon icon-5"><i class="fas fa-wifi"></i></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="logo">Ayush <span class="accent-text">Kumar</span></a>
+            <div class="nav-links">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <button class="mobile-menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <span class="badge animate-slide-in">👨‍💻 Cybersecurity Analyst</span>
+                <h1 class="dynamic-headline">
+                    Building <span class="highlight-text">secure</span> & 
+                    <span class="animated-text">beautiful</span> 
+                    digital <span class="gradient-text">experiences</span> ✨
+                </h1>
+                <p class="intro-text animate-fade-in">Student at LPU University, passionate about cybersecurity, 
+                    UI/UX design, and creating impactful solutions that make a difference. 🚀</p>
+                <div class="button-group">
+                    <a href="#projects" class="btn btn-primary btn-with-icon animate-fade-in">
+                        <span>View My Work</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="#contact" class="btn btn-secondary btn-with-icon animate-fade-in">
+                        <span>Get in Touch</span>
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+                <div class="social-icons animate-fade-in">
+                    <a href="https://github.com/AYUSH09874" class="social-icon"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/ayush-kumar-7a80b4251/" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            <div class="profile-image-container animate-float">
+                <div class="profile-background"></div>
+                <img src="{{ url_for('static', filename='image.jpg') }}" alt="Profile Photo" class="profile-image">
+                <div class="orbit"></div>
+                <div class="orbit orbit-2"></div>
+                <div class="orbit orbit-3"></div>
+                <div class="tech-bubble tech-bubble-1"><i class="fas fa-shield-alt"></i></div>
+                <div class="tech-bubble tech-bubble-2"><i class="fas fa-code"></i></div>
+                <div class="tech-bubble tech-bubble-3"><i class="fas fa-database"></i></div>
+            </div>
+        </div>
+        <div class="scroll-prompt">
+            <span>Scroll Down</span>
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-subtitle">Who I Am</span>
+                <h2 class="section-title">About Me <span class="emoji">🎯</span></h2>
+                <div class="title-underline"></div>
+            </div>
+            
+            <div class="about-content">
+                <div class="about-image-container animate-on-scroll">
+                    <div class="about-image-bg"></div>
+                    <img src="{{ url_for('static', filename='image.jpg') }}" alt="About Me" class="about-image">
+                    <div class="experience-badge">
+                        <span class="number">3+</span>
+                        <span class="text">Years Coding</span>
+                    </div>
+                </div>
+                
+                <div class="about-text-wrap animate-on-scroll">
+                    <div class="about-text-card">
+                        <p>I'm <strong class="accent-text">Ayush Kumar</strong>, a passionate and driven individual currently pursuing my studies in <strong>cybersecurity engineering</strong>. I have a strong interest in technology, especially in areas like <strong>web development</strong>, <strong>machine learning</strong>, and <strong>data analysis</strong>.</p>
+                        
+                        <p>My journey so far has included building interactive web apps using <strong>HTML, CSS, and JavaScript</strong>, as well as diving into <strong>Java-based logic programs</strong> and <strong>anomaly detection in healthcare datasets</strong> using <strong>unsupervised learning techniques</strong>.</p>
+                        
+                        <p>Outside of academics, I enjoy outdoor activities and continuously strive to improve my skills through hands-on projects and self-learning. My goal is to grow into a well-rounded <strong>cybersecurity professional</strong> while contributing to innovative and impactful tech solutions.</p>
+                    </div>
+                    
+                    <div class="currently-learning">
+                        <h3><i class="fas fa-laptop-code"></i> Currently Learning</h3>
+                        <div class="learning-tags">
+                            <span class="learning-tag"><i class="fab fa-react"></i> Flask</span>
+                            <span class="learning-tag"><i class="fas fa-shield-virus"></i> Django</span>
+                            <span class="learning-tag"><i class="fas fa-brain"></i> Machine Learning</span>
+                        </div>
+                    </div>
+                    
+                    <div class="resume-card">
+                        <h3><i class="fas fa-file-alt"></i> Resume</h3>
+                        <p>Want to know more about my qualifications and experience?</p>
+                        <a href="https://drive.google.com/file/d/1XAK-8ON6KxlRJNok2rCzXezwKdhHublA/view?usp=drivesdk" class="btn btn-primary btn-download">
+                            <i class="fas fa-download"></i> Download Resume
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="education-container animate-on-scroll">
+                <div class="education-card">
+                    <h3><i class="fas fa-graduation-cap"></i> Education</h3>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <h4>Lovely Professional University</h4>
+                                <p class="timeline-period">2022 - Present</p>
+                                <p class="timeline-description">B.tech CSE - 6th Semester</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <h4>Central Public School, Chhapra, Bihar</h4>
+                                <p class="timeline-period">2019 - 2021</p>
+                                <p class="timeline-description">High School - Science Stream</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-subtitle">What I Know</span>
+                <h2 class="section-title">My Skills <span class="emoji">💻</span></h2>
+                <div class="title-underline"></div>
+            </div>
+            
+            <div class="skills-container">
+                <div class="skills-category animate-on-scroll">
+                    <h3><i class="fas fa-code"></i> Technical Skills</h3>
+                    <div class="skill-bars">
+                        <div class="skill-bar">
+                            <div class="skill-info">
+                                <span>HTML/CSS/JavaScript</span>
+                                <span class="percent">85%</span>
+                            </div>
+                            <div class="skill-progress-bg">
+                                <div class="skill-progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-info">
+                                <span>Python</span>
+                                <span class="percent">85%</span>
+                            </div>
+                            <div class="skill-progress-bg">
+                                <div class="skill-progress" style="width: 75%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-info">
+                                <span>Java</span>
+                                <span class="percent">80%</span>
+                            </div>
+                            <div class="skill-progress-bg">
+                                <div class="skill-progress" style="width: 80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-info">
+                                <span>SQL</span>
+                                <span class="percent">70%</span>
+                            </div>
+                            <div class="skill-progress-bg">
+                                <div class="skill-progress" style="width: 70%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-info">
+                                <span>UI/UX Design</span>
+                                <span class="percent">65%</span>
+                            </div>
+                            <div class="skill-progress-bg">
+                                <div class="skill-progress" style="width: 65%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skills-category animate-on-scroll">
+                    <h3><i class="fas fa-user-shield"></i> Security Skills</h3>
+                    <div class="tech-stack">
+                        <div class="tech-item">
+                            <div class="tech-icon">
+                                <i class="fas fa-network-wired"></i>
+                            </div>
+                            <span>Network Security</span>
+                        </div>
+                        <div class="tech-item">
+                            <div class="tech-icon">
+                                <i class="fas fa-bug"></i>
+                            </div>
+                            <span>Vulnerability Assessment</span>
+                        </div>
+                        <div class="tech-item">
+                            <div class="tech-icon">
+                                <i class="fas fa-lock"></i>
+                            </div>
+                            <span>Encryption</span>
+                        </div>
+                        <div class="tech-item">
+                            <div class="tech-icon">
+                                <i class="fas fa-shield-alt"></i>
+                            </div>
+                            <span>Web Security</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skills-category animate-on-scroll">
+                    <h3><i class="fas fa-users"></i> Soft Skills</h3>
+                    <div class="soft-skills">
+                        <div class="soft-skill">
+                            <div class="soft-skill-icon">
+                                <i class="fas fa-users-cog"></i>
+                            </div>
+                            <div class="soft-skill-info">
+                                <h4>Team Management</h4>
+                                <p>Experienced in coordinating team efforts and ensuring project success through effective leadership.</p>
+                            </div>
+                        </div>
+                        <div class="soft-skill">
+                            <div class="soft-skill-icon">
+                                <i class="fas fa-tasks"></i>
+                            </div>
+                            <div class="soft-skill-info">
+                                <h4>Project Management</h4>
+                                <p>Skilled in planning, executing, and completing projects within deadlines and requirements.</p>
+                            </div>
+                        </div>
+                        <div class="soft-skill">
+                            <div class="soft-skill-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="soft-skill-info">
+                                <h4>Consistency</h4>
+                                <p>Dedicated to maintaining high standards of work quality and reliability throughout projects.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-subtitle">My Work</span>
+                <h2 class="section-title">Featured Projects <span class="emoji">💡</span></h2>
+                <div class="title-underline"></div>
+            </div>
+            
+            <div class="projects-grid">
+                <!-- Project Card 1 -->
+                <div class="project-card animate-on-scroll">
+                    <div class="project-card-inner">
+                        <img src="Anomoly.jpg" alt="Anomaly Detection Project Screenshot" class="project-image">
+
+                        <div class="project-header">
+                            <div class="project-icon">
+                                <i class="fas fa-search"></i>
+                            </div>
+                            <span class="project-badge">Machine Learning</span>
+                        </div>
+                        <h3>Unsupervised Anomaly Detection</h3>
+                        <p>This project focuses on detecting anomalies in healthcare provider data using unsupervised machine learning techniques. The goal is to identify unusual patterns that may indicate fraudulent activities or data inconsistencies.</p>
+                        <div class="project-tags">
+                            <span class="tag">Machine Learning</span>
+                            <span class="tag">Healthcare</span>
+                            <span class="tag">Data Analysis</span>
+                        </div>
+                        <div class="project-footer">
+                            <a href="https://github.com/malay42/Unsupervised-Anomaly-Detection-on-Healthcare-providers-data_Infosys_Internship_Oct2024/tree/Ayush" class="btn btn-small btn-primary">
+                                <i class="fas fa-external-link-alt"></i> View Project
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project Card 2 -->
+                <div class="project-card animate-on-scroll">
+                    <div class="project-card-inner">
+                        <img src="Railways.jpg" alt="Railway Reservation System Screenshot" class="project-image">
+                        <div class="project-header">
+                            <div class="project-icon">
+                                <i class="fas fa-train"></i>
+                            </div>
+                            <span class="project-badge">Web Development</span>
+                        </div>
+                        <h3>Railways Reservation System</h3>
+                        <p>This project simulates a basic railway ticket booking system using HTML for structure, CSS for styling, and JavaScript for dynamic functionality. Users can view train schedules, check seat availability, and make reservations.</p>
+                        <div class="project-tags">
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">JavaScript</span>
+                        </div>
+                        <div class="project-footer">
+                            <a href="https://github.com/AYUSH09874/Railway-Reservation-System" target="_blank" class="btn btn-small btn-primary">
+                                <i class="fas fa-external-link-alt"></i> View Project
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project Card 3 -->
+                <div class="project-card animate-on-scroll">
+                    <div class="project-card-inner">
+                        <img src="Parking.jpg" alt="Smart Parking App Screenshot" class="project-image">
+                        <div class="project-header">
+                            <div class="project-icon">
+                                <i class="fas fa-mobile-alt"></i>
+                            </div>
+                            <span class="project-badge">UI/UX Design</span>
+                        </div>
+                        <h3>Smart Parking App</h3>
+                        <p>You created a mobile-friendly app that addresses limited parking in urban areas. It features real-time parking availability, interactive maps, and a reservation system. The app was built based on surveys and interviews, especially in Phagwara, ensuring accessible and intuitive UX design.</p>
+                        <div class="project-tags">
+                            <span class="tag">UI/UX</span>
+                            <span class="tag">Mobile App</span>
+                            <span class="tag">User Research</span>
+                        </div>
+                        <div class="project-footer">
+                            <a href="https://www.figma.com/design/hBNipgt7tfyDppFrvNxwvl/high-parking?node-id=0-1&p=f&t=QxDg0AInfsmOjTIS-0" class="btn btn-small btn-primary">
+                                <i class="fas fa-external-link-alt"></i> View Design
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-subtitle">What Others Say</span>
+                <h2 class="section-title">Testimonials <span class="emoji">💬</span></h2>
+                <div class="title-underline"></div>
+            </div>
+            
+            <div class="testimonial-slider animate-on-scroll">
+                <div class="testimonial-slide active">
+                    <div class="testimonial-content">
+                        <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+                        <p>"Ayush demonstrated exceptional problem-solving skills during our collaborative project. His cybersecurity insights were invaluable to our class."</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">
+                                <div class="avatar-placeholder">VB</div>
+                            </div>
+                            <div class="author-info">
+                                <h4>Vinay Bhardwaj</h4>
+                                <p>Teacher, LPU</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-slide">
+                    <div class="testimonial-content">
+                        <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+                        <p>"Ayush's sharp attention to detail and innovative approach to UI/UX challenges truly stand out. I wish him all the best for a successful future."</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">
+                                <div class="avatar-placeholder">HR</div>
+                            </div>
+                            <div class="author-info">
+                                <h4>Harshits Roy</h4>
+                                <p>UX Designer, LPU</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-slide">
+                    <div class="testimonial-content">
+                        <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+                        <p>"Ayush's technical skills combined with his ability to communicate complex concepts clearly made him an invaluable part of his team."</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">
+                                <div class="avatar-placeholder">M</div>
+                            </div>
+                            <div class="author-info">
+                                <h4>Malay</h4>
+                                <p>Senior Developer, Infosys</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-controls">
+                    <button class="testimonial-nav-btn prev-btn"><i class="fas fa-chevron-left"></i></button>
+                    <div class="testimonial-dots">
+                        <span class="testimonial-dot active"></span>
+                        <span class="testimonial-dot"></span>
+                        <span class="testimonial-dot"></span>
+                    </div>
+                    <button class="testimonial-nav-btn next-btn"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-subtitle">Say Hello</span>
+                <h2 class="section-title">Feedback & Suggestions <span class="emoji">✉</span></h2>
+                <div class="title-underline"></div>
+            </div>
+            
+            <div class="contact-container">
+                <div class="contact-info animate-on-scroll">
+                    <div class="contact-card">
+                        <a href="mailto:singhayush.osm@gmail.com" target="_blank" class="contact-icon"><i class="fas fa-envelope"></i>
+                        </a>
+                        <h3>Email</h3>
+                        <p>singhayush.osm@gmail.com.com</p>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <h3>Location</h3>
+                        <p>Phagwara, Punjab, India</p>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <a href="https://www.linkedin.com/in/ayush-kumar-7a80b4251/" target="_blank" class="contact-icon"><i class="fab fa-linkedin"></i></a>
+                        <h3>LinkedIn</h3>
+                        <p>www.linkedin.com/in/i-ayush-kumar</p>
+                    </div>
+                </div>
+                
+                <div class="contact-form-wrapper animate-on-scroll">
+                    <form id="contact-form" class="contact-form">
+                        <div class="form-group">
+                            <label for="name"><i class="fas fa-user"></i> Name</label>
+                            <input type="text" id="name" required>
+                            <div class="form-focus-bar"></div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email"><i class="fas fa-envelope"></i> Email</label>
+                            <input type="email" id="email" required>
+                            <div class="form-focus-bar"></div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject"><i class="fas fa-heading"></i> Subject</label>
+                            <input type="text" id="subject" required>
+                            <div class="form-focus-bar"></div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message"><i class="fas fa-comment-alt"></i> Message</label>
+                            <textarea id="message" required></textarea>
+                            <div class="form-focus-bar"></div>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary btn-submit">
+                            <span>Send Message</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    {% with messages = get_flashed_messages() %}
+  {% if messages %}
+    <div class="bg-green-100 text-green-700 p-2 rounded mb-4">
+      {{ messages[0] }}
+    </div>
+  {% endif %}
+{% endwith %}
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h3>Ayush <span class="accent-text"> Kumar</span></h3>
+                    <p>Cybersecurity Student & Developer</p>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-social">
+                    <h4>Connect With Me</h4>
+                    <div class="social-links">
+                        <a href="https://github.com/AYUSH09874" class="social-link"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/ayush-kumar-7a80b4251/" class="social-link"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/a.y.u.s.h_kr?igsh=bHI1bWI5ZnR4eTJ6" class="social-link"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Ayush Kumar. All rights reserved.</p>
+                <p class="footer-credit">Designed with <i class="fas fa-heart"></i> by Ayush Kumar</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Custom cursor -->
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
